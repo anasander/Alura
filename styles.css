@@ -1,5 +1,6 @@
 :root {
   --black: #000000;
+  --black-extra: #0a0a0a;
   --less-black: #101010;
   --dark-gray: #1e1e1e;
   --gray: #7e8d85;
@@ -9,14 +10,18 @@
 
 body {
   background-color: var(--black);
+  font-family: "Roboto", sans-serif;
 }
+
+/* HEADER */
 
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
-  padding: 12px;
+  max-width: 300px;
+  height: 100vh;
+  margin: 12px;
 }
 
 .sidebar-nav {
@@ -49,7 +54,6 @@ body {
 .sidebar-nav-links a {
   color: var(--gray);
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
 }
 
 .sidebar-nav-links span {
@@ -71,7 +75,6 @@ body {
 .sidebar-library li {
   color: var(--gray);
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -82,7 +85,6 @@ body {
 .sidebar-library-decoration {
   color: var(--gray);
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
@@ -91,7 +93,6 @@ body {
 .sidebar-library-decoration a {
   color: var(--gray);
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
   transition: 0.3s;
 }
 
@@ -182,7 +183,6 @@ body {
 }
 
 .legal a {
-  font-family: "Roboto", sans-serif;
   font-size: 10px;
   color: var(--gray);
   padding: 8px;
@@ -200,7 +200,6 @@ body {
 .language a {
   color: var(--white);
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   padding: 8px 12px;
   border: solid 1px var(--white);
   border-radius: 8px;
@@ -215,17 +214,150 @@ body {
   padding-right: 4px;
 }
 
+/* MAIN */
+
 .main {
   position: fixed;
   top: 0;
   right: 0;
+  height: 85vh;
   left: 312px;
-  padding: 12px;
   margin: 12px;
   border-radius: 4px;
+  background-color: var(--black-extra);
+  color: var(--gray);
+}
+
+.header {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-login {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.arrow {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
   background-color: var(--less-black);
+  color: var(--gray);
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.search {
+  font-size: 14px;
+  color: var(--gray);
+  background-color: var(--dark-gray);
+  border-radius: 8px;
+}
+
+.search span {
+  padding: 0 0 0 12px;
+}
+
+#search-input {
+  font-size: 14px;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark-gray);
+  border-radius: 8px;
+  width: 400px;
+  padding: 8px 20px 8px 10px;
+  border: solid 2px transparent;
+  transition: 0.3s;
+}
+
+.search input:focus {
+  outline: transparent !important;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login a {
+  color: var(--black);
+  background-color: var(--white);
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.login a:hover {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.login a:first-child {
+  color: var(--gray);
+  background-color: transparent;
+}
+
+.login a:first-child:hover {
   color: var(--white);
 }
+
+.main-content {
+  background-color: var(--less-black);
+}
+
+.main-content-section {
+  padding: 12px 20px;
+}
+
+.main-content-section p {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 20px 0 20px;
+  gap: 12px;
+  height: 465px;
+  overflow: hidden;
+  overflow-y: scroll;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.cards div,
+.cards:hover {
+  visibility: visible;
+}
+
+.card {
+  width: 180px;
+  height: 200px;
+  background-color: tomato;
+  border-radius: 4px;
+}
+
+/* FOOTER */
 
 .footer {
   position: fixed;
@@ -239,7 +371,6 @@ body {
   margin: 12px;
   align-items: center;
   color: var(--white);
-  font-family: "Roboto", sans-serif;
 }
 
 .footer p:first-child {
