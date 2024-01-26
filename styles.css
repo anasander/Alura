@@ -323,7 +323,7 @@ body {
 }
 
 .main-content-section {
-  padding: 12px 20px;
+  padding: 12px 0 12px 20px;
 }
 
 .main-content-section p {
@@ -345,16 +345,154 @@ body {
   transition: 0.3s;
 }
 
-.cards div,
+.cards a,
 .cards:hover {
   visibility: visible;
 }
 
 .card {
-  width: 180px;
-  height: 200px;
-  background-color: tomato;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px;
+  width: 193px;
+  height: 210px;
   border-radius: 4px;
+  border: solid 1px var(--gray);
+  box-shadow: inset 0px 4em 80px 0 var(--dark-gray);
+  transition: 0.3s;
+}
+
+.card:hover {
+  color: var(--blue);
+  border: solid 1px var(--blue);
+  opacity: 1;
+}
+
+.sotc {
+  background-image: url(./src/img/shadow-of-the-colossus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.bloodborne {
+  background-image: url(./src/img/bloodborne.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.persona5r {
+  background-image: url(./src/img/persona-5-r.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.liesofp {
+  background-image: url(./src/img/lies-of-p.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.yakuza {
+  background-image: url(./src/img/yakuza-like-a-dragon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.mariogalaxy {
+  background-image: url(./src/img/super-mario-galaxy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.kh3 {
+  background-image: url(./src/img/kingdom-hearts-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.ffx {
+  background-image: url(./src/img/final-fantasy-x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.skyrim {
+  background-image: url(./src/img/elder-scrolls-skyrim.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.rdr2 {
+  background-image: url(./src/img/red-dead-redemption-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.ico {
+  background-image: url(./src/img/ico.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.celeste {
+  background-image: url(./src/img/celeste.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.eldenring {
+  background-image: url(./src/img/elden-ring.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.chronotrigger {
+  background-image: url(./src/img/chrono-trigger.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.doometernal {
+  background-image: url(./src/img/doom-eternal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.zeldass {
+  background-image: url(./src/img/zelda-skyward-sword.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.sh2 {
+  background-image: url(./src/img/silent-hill-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.csotn {
+  background-image: url(./src/img/castlevania-symphony-of-the-night.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
 }
 
 /* FOOTER */
