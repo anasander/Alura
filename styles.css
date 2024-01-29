@@ -13,6 +13,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 
 .sidebar {
@@ -320,6 +324,7 @@ body {
 
 .main-content {
   background-color: var(--less-black);
+  padding: 0 0 20px 0;
 }
 
 .main-content-section {
@@ -373,130 +378,211 @@ body {
   background-image: url(./src/img/shadow-of-the-colossus.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .bloodborne {
   background-image: url(./src/img/bloodborne.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .persona5r {
   background-image: url(./src/img/persona-5-r.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .liesofp {
   background-image: url(./src/img/lies-of-p.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .yakuza {
   background-image: url(./src/img/yakuza-like-a-dragon.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .mariogalaxy {
   background-image: url(./src/img/super-mario-galaxy.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .kh3 {
   background-image: url(./src/img/kingdom-hearts-3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .ffx {
   background-image: url(./src/img/final-fantasy-x.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .skyrim {
   background-image: url(./src/img/elder-scrolls-skyrim.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .rdr2 {
   background-image: url(./src/img/red-dead-redemption-2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .ico {
   background-image: url(./src/img/ico.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .celeste {
   background-image: url(./src/img/celeste.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .eldenring {
   background-image: url(./src/img/elden-ring.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .chronotrigger {
   background-image: url(./src/img/chrono-trigger.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .doometernal {
   background-image: url(./src/img/doom-eternal.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .zeldass {
   background-image: url(./src/img/zelda-skyward-sword.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .sh2 {
   background-image: url(./src/img/silent-hill-2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .csotn {
   background-image: url(./src/img/castlevania-symphony-of-the-night.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.hidden {
-  display: none;
+.card-search {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: var(--dark-gray);
+  text-align: center;
+  opacity: 0.9;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-search:hover {
+  opacity: 1;
+}
+
+.card-search:hover #ost-img {
+  border: 1px solid var(--blue);
+}
+
+.card-search-img {
+  padding: 12px;
+}
+
+#ost-img {
+  width: 150px;
+  height: auto;
+  border: 1px solid var(--gray);
+  border-radius: 20px;
+  object-fit: fill;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.composers {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0 4px 0;
+}
+
+#ost-composer {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.play {
+  position: relative;
+}
+
+.play .fa-play {
+  position: absolute;
+  right: 10px;
+  top: -40px;
+  padding: 20px;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.card-search:hover .play .fa-play {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+  padding: 20px;
+}
+
+.card-search-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gray);
+  transition: 0.3s;
+}
+
+.card-search:hover .card-search-text {
+  color: var(--white);
 }
 
 /* FOOTER */

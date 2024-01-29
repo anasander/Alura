@@ -101,7 +101,7 @@
             <div class="header-login">
                 <div class="search">
                     <span class="fa fa-search"></span>
-                    <input id="search-input" type="search" placeholder="O que você quer ouvir?">
+                    <input id="search-input" type="search" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="O que você quer ouvir?">
                 </div>
                 <div class="login">
                     <a href="">Inscreva-se</a>
@@ -176,6 +176,21 @@
             <div id="search-result">
                 <div class="main-content-section">
                     <p>Sua busca:</p>
+                </div>
+                <div class="card-search">
+                    <a href="">
+                        <div class="card-search-img">
+                            <img id="ost-img" class="ost-img">
+                        </div>
+                        <div class="play">
+                            <span class="fa fa-solid fa-play"></span>
+                        </div>
+                        <div class="card-search-text">
+                            <span id="ost-name"></span>
+                            <p class="composers">Compositor(es):</p>
+                            <p id="ost-composer"></p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
